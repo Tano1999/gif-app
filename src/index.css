@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 60px;
+  background-color: #f2f2f2;
+  font-family: "RobotoDraft", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.h2_title {
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(44, 204, 130);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.formGif {
+  display: inline;
+}
+
+input {
+  color: gray;
+  font-size: 1.2rem;
+  margin: 15px;
+}
+.inputNumber {
+  width: 50px;
+}
+.button_form {
+  color: rgb(255, 255, 255);
+  background-color: rgb(44, 204, 130);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+}
+.button_form:hover {
+  cursor: pointer;
+}
+.button_form:focus {
+  background-color: rgb(197, 26, 183);
+}
+
+.h3Category {
+  text-align: center;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: palevioletred;
+  text-shadow: 5px 5px 5px grey;
+}
+
+.divGrid {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.divItem {
+  height: 18em;
+  width: 20em;
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  /* -ms-flex-direction: column; */
+  flex-direction: column;
+  /* position: relative; */
+  /* -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); */
+  border-radius: 16px;
+  overflow: hidden;
+  /* -webkit-box-shadow: 15px 27px 27px #e1e1e3, -15px -15px 27px #ffffff; */
+  /* box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; */
+  padding: 10px;
+}
+
+.divItem > img {
+  height: 10em;
+  width: 20em;
+  padding-bottom: 0;
+}
+
+.divItem > h3 {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.divItem:hover {
+  background-color: gray;
+  cursor: pointer;
 }
